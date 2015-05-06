@@ -1,1 +1,3 @@
-document.write(require('../files/Siteadmin.js'));
+document.addEventListener("DOMContentLoaded", function() {
+	require('../files/Siteadmin.js');
+});
