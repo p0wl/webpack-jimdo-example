@@ -11,6 +11,11 @@ module.exports = {
         filename: "[name].js",
         chunkFilename: "[chunkhash].js"
     },
+    resolve: {
+        root: [
+            path.join(__dirname, "files")
+        ]
+    },
     plugins: [
         new webpack.optimize.CommonsChunkPlugin("init.js"),
         new webpack.optimize.UglifyJsPlugin()

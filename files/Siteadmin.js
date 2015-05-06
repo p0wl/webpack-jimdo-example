@@ -1,7 +1,7 @@
 module.exports = (function () {
 	document.getElementById('someButton').addEventListener('click', function () {
-		require.ensure(['../files/LoadMeAsync.js'], function () {
-			var x = require('../files/LoadMeAsync.js');
+		require.ensure(['LoadMeAsync.js'], function () {
+			var x = require('LoadMeAsync.js');
 			alert(x);
 		});
 	});
