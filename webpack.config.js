@@ -25,8 +25,13 @@ module.exports = {
         loaders: [
             [
                 {
+                    test: /\.sass$/,
+                    // Passing indentedSyntax query param to node-sass
+                    loader: "sass?indentedSyntax"
+                },
+                {
                     test: /legacy.+\.css$/,
-                    loader: ExtractTextPlugin.extract("style-loader", "css-loader?sourceMap&minimize&root=~")
+                    loader: ExtractTextPlugin.extract("style-loader", "css-loader?sourceMap&minimize&root=~!sass")
                 },
                 { 
                     test: /\.css$/, loaders: ["style", "css?sourceMap&minimize&root=~"] 
