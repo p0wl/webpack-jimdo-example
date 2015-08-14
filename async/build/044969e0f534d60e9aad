@@ -1,0 +1,14 @@
+webpackJsonp([1,2],{
+
+/***/ 3:
+/***/ function(module, exports) {
+
+	// async.js
+
+	module.exports = 'ASYNC';
+
+	console.log('async.js finished');
+
+/***/ }
+
+});
