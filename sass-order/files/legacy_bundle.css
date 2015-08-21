@@ -1,0 +1,8 @@
+@import 'some.sass';
+
+.legacy_bundle {
+    content: 'legacy_bundle';
+}
+
+@import 'middle.css';
+@import 'other.sass';
